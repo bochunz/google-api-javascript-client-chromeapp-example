@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Hello World",
+  "version": "2.1",
+  "minimum_chrome_version": "23",
+  "permissions" : [
+    "webview"
+  ],
+  "webview": {
+    "partitions": [
+      {
+        "name": "static",
+        "accessible_resources": ["gapi.html"]
+      }
+    ]
+  },
+  "icons": {
+    "16": "icon_16.png",
+    "128": "icon_128.png"
+  },
+  "app": {
+    "background": {
+      "scripts": ["main.js"]
+    }
+  }
+}

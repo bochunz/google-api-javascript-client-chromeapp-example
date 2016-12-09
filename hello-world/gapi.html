@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>gapi</title>
+    <script async defer src="https://apis.google.com/js/api.js"
+      onload="this.onload=function(){};handleClientLoad()"
+      onreadystatechange="if (this.readyState === 'complete') this.onload()">
+    </script>
+    <script>
+      function handleClientLoad() {
+        gapi.load('client', initClient);
+      }
+
+      function initClient() {
+        console.log('gapi.client is loaded.')
+        // ... init gapi.client and call Google API.
+        // See example on https://developers.google.com/api-client-library/javascript/samples/samples
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

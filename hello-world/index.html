@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Hello World</title>
+    <link href="styles/main.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <!-- Remove the style in the webview, the webview will become visible.
+      If you right click on the webview and select Inspect, you will see
+      the gapi library is loaded inside the webview. -->
+    <webview id="gapi-frame" 
+             partition="persist:static" 
+             src="/gapi.html" 
+             style="width: 1px;height: 1px;position: absolute;top: -100px;">
+    </webview>
+</body>
+</html>
